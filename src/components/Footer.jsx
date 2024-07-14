@@ -6,15 +6,18 @@ const Footer = () => {
                 backgroundColor: "#002D62",
                 height: 600,
                 display: "flex",
-                alignContent: "space-between",
+                // flexDirection: "column",
+                gap: 10,
+                padding: "20px",
+                alignContent: "",
             }}
         >
             <div>
                 <h2>AntiKe School</h2>
-                <pre>
+                <p>
                     online learning community school for code kids powered by
                     BLK
-                </pre>
+                </p>
             </div>
             <div>
                 <h2>Popular Links</h2>

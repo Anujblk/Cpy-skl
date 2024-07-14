@@ -1,14 +1,19 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./components/Home";
+import Teachers from "./components/Teachers";
+import Holidays from "./components/Holiday";
+import ContactUs from "./components/ContactUs";
+import NotFound from "./components/NotFound";
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<h1>WElcome to home</h1>} />
-        <Route path="/teachers" element={<h1>welcome teachers</h1>} />
-        <Route path="/holidays" element={<h1>holidays</h1>} />
-        <Route path="contact-us" element={<p>contact us</p>} />
-        <Route path="*" element={<h1>Not found</h1>} />
+        <Route path="/" element={<Home />} />
+        <Route path="/teachers" element={<Teachers />} />
+        <Route path="/holidays" element={<Holidays />} />
+        <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
