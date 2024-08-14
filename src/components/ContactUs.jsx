@@ -3,6 +3,9 @@ const contactUs = () => {
     <div>
       <h1>Contact Us</h1>
       <div style={{ flexDirection: "column", display: "flex" }}>
+      <div>
+      <img src="./images/Contact.png" alt="" />
+      </div>
         <textarea
           name="fullname"
           id="fullname"
